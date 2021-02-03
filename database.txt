@@ -1,0 +1,30 @@
+CREATE TABLE products (
+    id INT(7) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    price INT(5) NOT NULL,
+    on_sales boolean
+    PRIMARY KEY (id)
+
+);
+
+CREATE TABLE restaurants (
+    id INT(7) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    location VARCHAR(50) NOT NULL,
+    price_range INT(5) NOT NULL
+    PRIMARY KEY (id)
+
+);
+
+CREATE TABLE reviews (
+    id INT(7),
+    name VARCHAR(50),
+    location VARCHAR(50),
+    price_range INT(5)
+    PRIMARY KEY (id)
+
+);
+
+INSERT INTO restaurants (name, location, price_range)
+     VALUES ("El primer restauran","Caracas", 100)
+

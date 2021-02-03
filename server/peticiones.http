@@ -1,0 +1,57 @@
+### querry all restaurantes 
+GET http://localhost:3500/api/v1/restaurants
+Content-Type: application/json
+
+### querry a restaurant byId
+GET http://localhost:3500/api/v1/restaurants/16
+Content-Type: application/json
+
+
+### add a restaurant
+POST http://localhost:3500/api/v1/restaurants
+Content-Type: application/json
+
+{
+    "name": "Pizza Hub",
+    "location": "Miami",
+    "price_range": 3
+}
+
+### update un restaurante
+PUT http://localhost:3500/api/v1/restaurants/6
+Content-Type: application/json
+
+{
+    "name": "el tercer restaurante cambiado",
+    "location": "Sevilla",
+    "price_range": 200
+}
+
+### Delete a restaurant 
+DELETE http://localhost:3500/api/v1/restaurant/7
+Content-Type: application/json
+
+
+#========== REVIEWS ============#
+
+### add a review
+POST http://localhost:3500/api/v1/restaurants/13/review
+Content-Type: application/json
+
+{
+    "name": "Pedro Perez",
+    "review": "Excelente Restaurant, atencion de primera",
+    "rating": 3
+}
+
+
+#========== TEST ============#
+### Test 1
+POST http://localhost:3500/test
+Content-Type: application/json
+
+{
+    "name": "Pedro juarez",
+    "location": "Excelente Restaurant, cambiando el registro",
+    "price_range": 3
+}
